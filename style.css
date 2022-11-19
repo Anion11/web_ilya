@@ -5,7 +5,8 @@
 }
 
 body {
-	height: 5169px;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
 }
 
 .firstContainer {
@@ -34,4 +35,7 @@ body {
 .compName {
 	font-family: 'Manrope', sans-serif;
 	font-size: 23;
+}
+footer{
+	
 }
