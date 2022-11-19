@@ -1,4 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 *{
 	margin: 0;
 	padding: 0;
+}
+
+body {
+	height: 5169px;
+}
+
+.firstContainer {
+	margin-top: 30px;
+	margin-left: 200px;
+}
+
+#compName {
+	font-family: 'Manrope', sans-serif;
+	font-size: 23;
 }
