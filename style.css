@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 *{
 	margin: 0;
@@ -7,6 +8,54 @@
 body {
 	display: grid;
 	grid-template-rows: auto 1fr auto;
+}
+.headerCl {
+	margin-top: 34px;
+	margin-left: 135px;
+	margin-right: 135px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.compName {
+	margin-top: 2px;
+	font-family: 'Manrope', sans-serif;
+	font-size: 23px;
+}
+.menu {
+	display: grid;
+	grid-template-columns: repeat(6,1fr);
+	gap: 46px;
+	
+}
+.textMenu {
+	font-family: 'DM Sans', sans-serif;
+	font-size: 13px;
+	line-height: 17px;
+	text-decoration: none;
+	transition: 4s;
+}
+
+.menu .textMenu {
+	display: inline-block;
+    color: #000000;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+}
+.menu .textMenu:after {
+	background-color: #030303;
+    display: block;
+    content: "";
+    height: 3px;
+    width: 0px;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+} 
+
+.menu .textMenu:hover:after,
+.menu .textMenu:focus:after {
+    width:35px;
 }
 
 .firstContainer {
@@ -32,10 +81,7 @@ body {
 .sixthContainer {
 
 }
-.compName {
-	font-family: 'Manrope', sans-serif;
-	font-size: 23;
-}
+
 footer{
 	
 }
