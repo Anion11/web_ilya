@@ -47,7 +47,9 @@ body {
 .menu a span:hover{
 	border-bottom: 1px solid #31353B;
 }
-
+.activeLink{
+	border-bottom: 1px solid #31353B;
+}
 .firstContainer {
 
 }
@@ -81,15 +83,15 @@ footer{
 	margin-right: 280px;
 	grid-template-rows: 1fr auto;
 }
-.footer_hr{
+.footerHr{
 	border: 1px solid #DEDFE1;
 }
-.footer_logo_nav{
+.footerLogoNav{
 	margin-top: 60px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
-.footer_logo{
+.footerLogo{
 	font-family: 'Manrope';
 	font-style: normal;
 	font-weight: 800;
@@ -98,7 +100,7 @@ footer{
 	color: #31353B;
 	margin-right: 252px;
 }
-.footer_nav{
+.footerNav{
 	display: flex;
 	font-family: 'DM Sans';
 	font-style: normal;
@@ -106,11 +108,11 @@ footer{
 	font-size: 13px;
 	line-height: 17px;
 }
-.footer_nav a{
+.footerNav a{
 	margin-right: 46px;
 	color: #31353B;
 }
-.footer_nav a span:hover{
+.footerNav a:hover{
 	border-bottom: 1px solid #31353B;
 }
 .copyright{
