@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 *{
 	margin: 0;
 	padding: 0;
 }
-
+a{
+	text-decoration: none;
+}
+html {
+  height: 100%;
+}
 body {
 	display: grid;
 	grid-template-rows: auto 1fr auto;
+	min-height: 100%;
 }
 
 .firstContainer {
@@ -37,5 +44,55 @@ body {
 	font-size: 23;
 }
 footer{
-	
+	width: 100%;
+}
+.footer{
+	display: grid;
+	margin-left: 280px;
+	margin-right: 280px;
+	grid-template-rows: 1fr auto;
+}
+.footer_hr{
+	border: 1px solid #DEDFE1;
+}
+.footer_logo_nav{
+	margin-top: 60px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.footer_logo{
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 23px;
+	line-height: 31px;
+	color: #31353B;
+	margin-right: 252px;
+}
+.footer_nav{
+	display: flex;
+	font-family: 'DM Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 17px;
+}
+.footer_nav a{
+	margin-right: 46px;
+	color: #31353B;
+}
+.footer_nav a span:hover{
+	border-bottom: 1px solid #31353B;
+}
+.copyright{
+	margin-top: 77px;
+	margin-bottom: 36px;
+	width: 100%;
+	text-align: center;
+	font-family: 'DM Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 16px;
+	color: #31353B;
 }
