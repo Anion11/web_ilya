@@ -29,40 +29,23 @@ body {
 	font-size: 23px;
 }
 .menu {
-	display: grid;
-	grid-template-columns: repeat(6,1fr);
-	gap: 46px;
-	
-}
-.textMenu {
-	font-family: 'DM Sans', sans-serif;
+	justify-self: flex-end;
+	display: flex;
+	font-family: 'DM Sans';
+	font-style: normal;
+	font-weight: 700;
 	font-size: 13px;
 	line-height: 17px;
-	text-decoration: none;
-	transition: 4s;
+	
 }
 
-.menu .textMenu {
-	display: inline-block;
-    color: #000000;
-    line-height: 1;
-    text-decoration: none;
-    cursor: pointer;
+.menu a{
+	margin-right: 46px;
+	color: #31353B;
 }
-.menu .textMenu:after {
-	background-color: #030303;
-    display: block;
-    content: "";
-    height: 3px;
-    width: 0px;
-    -webkit-transition: width .3s ease-in-out;
-    -moz--transition: width .3s ease-in-out;
-    transition: width .3s ease-in-out;
-} 
 
-.menu .textMenu:hover:after,
-.menu .textMenu:focus:after {
-    width:35px;
+.menu a span:hover{
+	border-bottom: 1px solid #31353B;
 }
 
 .firstContainer {
