@@ -13,7 +13,7 @@ body {
 	margin-left: 200px;
 }
 
-#compName {
+.compName {
 	font-family: 'Manrope', sans-serif;
 	font-size: 23;
 }
