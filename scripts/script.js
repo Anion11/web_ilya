@@ -4,7 +4,7 @@ var time_out = 1;       // задержка смены изображений
 var i = 0;
 var timeout;
 var opacity = 100;
-
+var isPause;
 window.onload = function(){
 	document.querySelector("#imgZipCode").addEventListener("keypress", function (evt) {
     if (evt.which != 8 && evt.which != 0 && evt.which < 48 || evt.which > 57)
@@ -30,10 +30,24 @@ function fade_to_next() {
   }
 }
 
-setInterval (
-  function() {
-    i++;
-    if (i > total_pics_num) i=1;
-    fade_to_next();
-  }, interval
-);
+ window.setInterval(
+    function change() {
+      if(!isPause) {
+        i++;
+        if (i > total_pics_num) i=1;
+        fade_to_next();     
+      }
+      
+    }, interval);;
+
+document.addEventListener("visibilitychange", function(){
+	if (document.hidden){
+		isPause = true;
+	} else {
+		isPause = false;   
+	}
+});
+
+
+
+
