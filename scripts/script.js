@@ -48,6 +48,15 @@ document.addEventListener("visibilitychange", function(){
 	}
 });
 
+function checkinput(value){
+	if (value != ''){
+		document.getElementById('imgZipCode').style.opacity = 1;
+	}
+	else{
+		document.getElementById('imgZipCode').style.opacity = 0.4;
+	}
+}
+
 
 
 
