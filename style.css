@@ -72,13 +72,70 @@ main{
 	min-height: calc(100vh - var(--height_header));
 	display: grid;
 	grid-template-areas:
-    "A A A A   A A B B   B B B B"
-    "A A A A   A A B B   B B B B"
-    "A A A A   A A B B   B B B B"
+    "A A A A   A B B B   B B B B"
+    "A A A A   A B B B   B B B B"
+    "A A A A   A B B B   B B B B"
     "C C C C   C C C C   C C C C";
 }
 .textAndButton {
   grid-area: A;
+}
+.imgBtnZipCode{
+	height: 86px;
+	display: grid;
+	grid-template-columns: 80% 20%;
+}
+#imgZipCode{
+	background: url(Img/iconZipCode.png) no-repeat scroll 15px 32px;
+	padding-left:50px;
+	border-top: 2px solid #DADADA;
+	border-bottom: 2px solid #DADADA;
+	border-left: 2px solid #DADADA;
+	box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03),
+  0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778),
+  0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222),
+  0px 20px 13px rgba(0, 0, 0, 0.015),
+  0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778),
+  0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 27px;
+	letter-spacing: 0.01em;
+	color: #31353B;
+	opacity: 0.4;
+	height: 100%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+}
+#imgZipCode:focus {
+  opacity: 1;
+}
+#btnZipCode{
+	position: relative;
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 23px;
+	letter-spacing: 0.01em;
+	color: #FFFFFF;
+	text-align: center;
+	background: #F85A47;
+	height: 100%;
+	border: none;
+}
+#btnZipCode:hover{
+	opacity: 0.9;
+}
+#btnZipCode:active{
+	box-shadow:1px 1px 2px rgba(0,0,0,0.7) inset;
+	transform: scale(0.99);
 }
 .containerImage {
   grid-area: B;
