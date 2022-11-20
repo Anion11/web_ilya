@@ -89,7 +89,8 @@ main{
 	grid-template-columns: 80% 20%;
 }
 #imgZipCode{
-	background: url(Img/iconZipCode.png) no-repeat scroll 15px 32px;
+	background: url(Img/iconZipCode.png) no-repeat scroll calc(var(--font )*1);
+	background-size: calc(var(--font )*0.7);
 	padding-left:calc(var(--font )*2);
 	border-top: 2px solid #DADADA;
 	border-bottom: 2px solid #DADADA;
@@ -111,7 +112,6 @@ main{
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    /* display: none; <- Crashes Chrome on hover */
     -webkit-appearance: none;
     margin: 0;
 }
@@ -144,8 +144,26 @@ input::-webkit-inner-spin-button {
 .containerImage img {
   position: absolute;
 }
+.socialNetwork{
+	display: grid;
+	justify-items: end;
+	align-items: center;
+}
+.socialNetwork a{
+	right: 0;
+	height: 23px;
+	width: 23px;
+}
 .partners{
 	grid-area: C;
+
+	width: 64%;
+}
+.partners div{
+	display: grid;
+	grid-template-columns: repeat(6, auto);
+	grid-gap-columns: calc(var(--font )*3.5);
+	align-items: center;
 }
 .secondContainer {
 

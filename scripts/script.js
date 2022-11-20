@@ -13,7 +13,6 @@ window.onload = function(){
     }
 });
 }
-
 function fade_to_next() {
   opacity--;
   var k = i + 1;
