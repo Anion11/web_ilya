@@ -81,6 +81,7 @@ main{
 .textAndButton {
   grid-area: A;
   margin-top: calc(var(--font ));
+  width: 100%;
 }
 .imgBtnZipCode{
 	margin-top: calc(var(--font )*2);
@@ -130,9 +131,11 @@ input::-webkit-inner-spin-button {
 	text-align: center;
 	background: #F85A47;
 	border: none;
+	z-index: 3;
 }
 #btnZipCode:hover{
 	opacity: 0.9;
+	cursor: pointer;
 }
 #btnZipCode:active{
 	box-shadow:1px 1px 2px rgba(0,0,0,0.7) inset;
@@ -141,22 +144,37 @@ input::-webkit-inner-spin-button {
 .containerImage {
   grid-area: B;
 }
-.containerImage img {
-  position: absolute;
+#img_1{
+	position: absolute;
+	width: 60%;
+	max-height: 100%;
+	right: 0;
+	z-index: 2;
+	width: ;
+}
+#img_2{
+	width: 60%;
+	max-height: 100%;
+	position: absolute;
+	right: 0;
+	z-index: 2;
 }
 .socialNetwork{
+	height: 100%;
 	display: grid;
 	justify-items: end;
 	align-items: center;
 }
+.socialNetwork div{
+	display: grid;
+	gap: calc(var(--font )*1.5);
+}
 .socialNetwork a{
-	right: 0;
 	height: 23px;
 	width: 23px;
 }
 .partners{
 	grid-area: C;
-
 	width: 64%;
 }
 .partners div{
