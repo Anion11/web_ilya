@@ -12,11 +12,7 @@ window.onload = function(){
         evt.preventDefault();
     }
 });
-<<<<<<< HEAD
 }
-=======
-}
-
 function fade_to_next() {
   opacity--;
   var k = i + 1;
@@ -41,4 +37,3 @@ setInterval (
     fade_to_next();
   }, interval
 );
->>>>>>> 7eae7e81b2b2821534da871d2c534530d3a90e51
