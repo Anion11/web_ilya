@@ -140,9 +140,13 @@ input::-webkit-inner-spin-button {
 }
 .containerImage {
   grid-area: B;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7eae7e81b2b2821534da871d2c534530d3a90e51
 }
 .containerImage img {
+  opacity: 0;
   position: absolute;
 }
 .partners{
