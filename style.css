@@ -72,9 +72,9 @@ main{
 	min-height: calc(100vh - var(--height_header));
 	display: grid;
 	grid-template-areas:
-    "A A A A   A B B B   B B B B"
-    "A A A A   A B B B   B B B B"
-    "A A A A   A B B B   B B B B"
+    "A A A A   A A A B   B B B B"
+    "A A A A   A A A B   B B B B"
+    "A A A A   A A A B   B B B B"
     "C C C C   C C C C   C C C C";
 }
 .textAndButton {
@@ -139,6 +139,12 @@ input::-webkit-inner-spin-button {
 }
 .containerImage {
   grid-area: B;
+  
+}
+.containerImage img {
+  position: absolute;
+  width: 603px;
+  height: 573px;
 }
 .partners{
 	grid-area: C;
