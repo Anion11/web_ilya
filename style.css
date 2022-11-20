@@ -67,6 +67,7 @@ header{
 }
 main{
 	margin-left: calc(var(--font )*5);
+	margin-top: calc(var(--font )*3);
 }
 .firstContainer {
 	min-height: calc(100vh - var(--height_header));
@@ -79,15 +80,17 @@ main{
 }
 .textAndButton {
   grid-area: A;
+  margin-top: calc(var(--font ));
 }
 .imgBtnZipCode{
-	height: 86px;
+	margin-top: calc(var(--font )*2);
+	height: calc(var(--font )*3);
 	display: grid;
 	grid-template-columns: 80% 20%;
 }
 #imgZipCode{
 	background: url(Img/iconZipCode.png) no-repeat scroll 15px 32px;
-	padding-left:50px;
+	padding-left:calc(var(--font )*2);
 	border-top: 2px solid #DADADA;
 	border-bottom: 2px solid #DADADA;
 	border-left: 2px solid #DADADA;
@@ -100,12 +103,11 @@ main{
 	font-family: 'Manrope';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 20px;
+	font-size: calc(var(--font )*0.8);
 	line-height: 27px;
 	letter-spacing: 0.01em;
 	color: #31353B;
 	opacity: 0.4;
-	height: 100%;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -121,13 +123,12 @@ input::-webkit-inner-spin-button {
 	font-family: 'Manrope';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 17px;
+	font-size: calc(var(--font )*0.7);
 	line-height: 23px;
 	letter-spacing: 0.01em;
 	color: #FFFFFF;
 	text-align: center;
 	background: #F85A47;
-	height: 100%;
 	border: none;
 }
 #btnZipCode:hover{
@@ -139,12 +140,10 @@ input::-webkit-inner-spin-button {
 }
 .containerImage {
   grid-area: B;
-  
+
 }
 .containerImage img {
   position: absolute;
-  width: 603px;
-  height: 573px;
 }
 .partners{
 	grid-area: C;
