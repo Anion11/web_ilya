@@ -64,7 +64,7 @@ main{
 .blueBg{
 	width: 36%;
 	z-index: -1;
-	height: 100vh;
+	min-height: 100vh;
 	position: absolute;
 	right: 0;
 	background-color: #BDCCFF;
