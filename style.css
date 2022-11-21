@@ -72,12 +72,10 @@ main{
 .firstContainer {
 	min-height: calc(100vh - var(--height_header));
 	display: grid;
-	grid-template-areas:
-    "A A A A  A A A E";
+	grid-template-columns: 50% 50%;
 }
 .textAndButton {
   justify-self:start;
-  grid-area: A;
   margin-top: var(--font );
   width: 70%;
   z-index: 3;
@@ -163,7 +161,6 @@ input::-webkit-inner-spin-button {
 	gap: calc(var(--font )*3);
 }
 .containerImage {
-  grid-area: A;
 	justify-self: end;
 	width: 62%;
 	height: 70%;
@@ -197,7 +194,6 @@ input::-webkit-inner-spin-button {
 }
 
 .containerSocialNetwork{
-	grid-area:E;
 	height: 50%;
 	display: grid;
 	justify-items: end;
