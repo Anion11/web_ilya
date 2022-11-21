@@ -52,11 +52,11 @@ function checkinput(value){
 	if (value != ''){
 		document.getElementById('imgZipCode').style.opacity = 1;
 	}
-	else{
+	if (value == ''){
 		document.getElementById('imgZipCode').style.opacity = 0.4;
 	}
 }
-
-
-
+function checkinput1(){
+    document.getElementById('imgZipCode').style.opacity = 1;
+}
 
