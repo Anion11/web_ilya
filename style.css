@@ -47,7 +47,7 @@ header{
 }
 
 .menu a{
-	margin-right: calc(var(--font )*2);
+	margin-left: calc(var(--font )*2);
 	color: #31353B;
 }
 
@@ -59,6 +59,7 @@ header{
 }
 main{
 	margin-left: calc(var(--font )*5);
+	margin-right: calc(var(--font )*5);
 	margin-top: calc(var(--font )*3);
 }
 .blueBg{
@@ -72,23 +73,19 @@ main{
 .firstContainer {
 	min-height: calc(100vh - var(--height_header));
 	display: grid;
-	grid-template-areas:
-    "A A A A  A A A E";
+	grid-template-columns:50% 50%;
 }
 .textAndButton {
   justify-self:start;
-  grid-area: A;
   margin-top: var(--font );
-  width: 70%;
+  width: 100%;
   z-index: 3;
 }
 .imgBtnZipCode{
 	margin-top: calc(var(--font )*2);
 	height: calc(var(--font )*3);
-	display: grid;
-	width: 85.5%;
-	height: 8.6%;
-	grid-template-columns: 74.3% 25.7%;
+	width: 100%;
+	height: calc(var(--font) * 3.5);
 }
 #imgZipCode{
 	position: relative;
@@ -114,7 +111,7 @@ main{
 	opacity: 0.4;
 	z-index: 3;
 	width: 100%;
-	height: 100%;
+	height: calc(var(--font) * 3);
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -128,7 +125,7 @@ input::-webkit-inner-spin-button {
   opacity: 1;
 }
 #btnZipCode{
-	position: relative;
+	position: absolute;
 	font-family: 'Manrope';
 	font-style: normal;
 	font-weight: 700;
@@ -140,8 +137,8 @@ input::-webkit-inner-spin-button {
 	background: #F85A47;
 	border: none;
 	z-index: 3;
-	width: 100%;
-	height: 100%;
+	width: calc(var(--font) * 7);
+	height: calc(var(--font) * 3);
 }
 #btnZipCode:hover{
 	opacity: 0.9;
@@ -163,29 +160,26 @@ input::-webkit-inner-spin-button {
 	gap: calc(var(--font )*3);
 }
 .containerImage {
-  	grid-area: A;
-	justify-self: end;
-	width: 62%;
-	height: 70%;
+	position: relative;
+	width: 100%;
 }
 .imgs {
+	overflow-x: hidden;
+	justify-self: start;
 	display: grid;
     grid-template-areas:
 	" A ";
-    position: relative;
+    
 }
 #img_1 {
 	opacity: 100; 
-	filter: alpha(opacity=100);
-	min-width: 603px;
-	min-height: 573px;	
+	filter: alpha(opacity=100);	
 	width: 100%;
+	
 }
 #img_2 {
 	opacity: 100; 
 	filter: alpha(opacity=100);
-	min-width: 603px;
-	min-height: 573px;
 	width: 100%;
 }
 .imgBot {	
@@ -197,8 +191,8 @@ input::-webkit-inner-spin-button {
 }
 
 .containerSocialNetwork{
-	
-	grid-area:E;
+	position: absolute;
+	right: 0;
 	height: 50%;
 	display: grid;
 	justify-items: end;
