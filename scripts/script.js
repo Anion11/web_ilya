@@ -60,19 +60,9 @@ function hideHeader() {
 window.addEventListener('scroll', function() {
     var st = window.pageYOffset;
     if (st > lastScrollTop){
-        if(timer !== null) {
-           clearTimeout(timer);        
-          }
-        timer = setTimeout(function() {
-            spawnHeader();
-          }, 150);
+        spawnHeader();
    } else {
-        if(timer !== null) {
-          clearTimeout(timer);        
-        }
-        timer = setTimeout(function() {
-          hideHeader();
-         }, 150);   
+        hideHeader();
    }
 }, false);
 
