@@ -14,12 +14,15 @@ a{
 }
 html {
   height: 100%;
+  overflow-x:hidden;
+  width: 100vw;
 }
 body {
 	width: 100%;
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 	min-height: 100%;
+	
 }
 header{
 	height: var(--height_header);
