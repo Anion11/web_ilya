@@ -12,6 +12,10 @@
 }
 html {
   height: 100%;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 318f29477653fe281b86f8f0377dab650559bf52
 }
 body {
 	display: grid;
@@ -58,6 +62,7 @@ header{
 	border-bottom: 1px solid #31353B;
 }
 .headerClinvisibility{
+<<<<<<< HEAD
 	/*display: none; */
 	display: grid;
 	z-index: 100;
@@ -71,6 +76,10 @@ header{
 	border: 1px solid black;
 	margin-left: calc(var(--font )*5);
 	margin-right: calc(var(--font )*5);
+=======
+	visibility: hidden;
+	position: fixed;
+>>>>>>> 318f29477653fe281b86f8f0377dab650559bf52
 }
 main{
 	margin-left: calc(var(--font )*5);
