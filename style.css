@@ -59,6 +59,9 @@ header{
 .activeLink{
 	border-bottom: 1px solid #31353B;
 }
+.headerClinvisibility{
+	display: none;
+}
 main{
 	margin-left: calc(var(--font )*5);
 	margin-right: calc(var(--font )*5);
