@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 :root {
   --height_header: 64px;
@@ -225,9 +227,62 @@ input::-webkit-inner-spin-button {
 
 }
 .secondContainer {
-
+	margin-top: calc(var(--font) * 10);
+	height: calc(100vh - var(--height_header));
+}
+.headingText {
+	font-family: 'Manrope', sans-serif;
+	text-align: center;
+	font-weight: 600;
+	font-size: calc(var(--font )*1.3);
+	line-height: calc(var(--font )*0.8);
+}
+.aboutWorksContainer {
+	margin-top: calc(var(--font) * 3);
+	width: calc(var(--font) * 55);
+	height: calc(var(--font) * 12);
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: calc(var(--font) * 10);
+}
+.cardAbout {
+	text-align: center;
+	justify-items: center;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+}
+.cardAboutImg,.cardAboutImg1, .cardAboutImg2{
+	padding-top: calc(var(--font) * 1.3);
+	width: calc(var(--font) * 4);
+	height: calc(var(--font) * 4);
+	border-radius: 20px;
 }
 
+.cardAboutImg {
+	background-color: #9672FF;
+}
+.cardAboutImg1 {
+	background-color: #4DDFFD;
+}
+.cardAboutImg2 {
+	background-color: #F2B8EC;
+	
+}
+
+.headingCard {
+	font-family: 'Manrope', sans-serif;
+	font-weight: 600;
+	font-size: calc(var(--font )*1);
+	line-height: calc(var(--font )*1);
+}
+
+.textInCard {
+	font-weight: 400;
+	margin-top: calc(var(--font) * 1);
+	font-family: 'Manrope', sans-serif;
+	font-size: calc(var(--font )*0.8);
+	line-height: calc(var(--font )*0.8);
+}
 .thirdContainer {
 
 }
