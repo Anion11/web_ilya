@@ -5,6 +5,7 @@ var i = 0;
 var timeout;
 var opacity = 100;
 var isPause;
+var lastScrollTop = 100; //После какого значения появлется хэдер
 window.onload = function(){
 	document.querySelector("#imgZipCode").addEventListener("keypress", function (evt) {
     if (evt.which != 8 && evt.which != 0 && evt.which < 48 || evt.which > 57)
