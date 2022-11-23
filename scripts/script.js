@@ -3,6 +3,7 @@ var interval = 5000;    // задержка между изображениям�
 var time_out = 1;       // задержка смены изображений
 var i = 0;
 var timeout;
+var timer = null;
 var opacity = 100;
 var isPause;
 var lastScrollTop = 100; //После какого значения появлется хэдер
@@ -58,7 +59,6 @@ function hideHeader() {
 
 window.addEventListener('scroll', function() {
     var st = window.pageYOffset;
-    console.log(st);
     if (st > lastScrollTop){
         if(timer !== null) {
            clearTimeout(timer);        
@@ -75,6 +75,7 @@ window.addEventListener('scroll', function() {
          }, 150);   
    }
 }, false);
+
 function checkinput(value){
 	if (value != ''){
 		document.getElementById('imgZipCode').style.opacity = 1;
@@ -83,7 +84,8 @@ function checkinput(value){
 		document.getElementById('imgZipCode').style.opacity = 0.4;
 	}
 }
-function checkinput1(){
+
+function checkinput1()
 {
     document.getElementById('imgZipCode').style.opacity = 1;
 }
