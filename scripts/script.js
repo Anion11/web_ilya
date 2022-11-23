@@ -7,14 +7,18 @@ var timer = null;
 var opacity = 100;
 var isPause;
 var lastScrollTop = 100; //После какого значения появлется хэдер
+var links = document.getElementsByClassName("disactiveLink");
 window.onload = function(){
 	document.querySelector("#imgZipCode").addEventListener("keypress", function (evt) {
     if (evt.which != 8 && evt.which != 0 && evt.which < 48 || evt.which > 57)
     {
         evt.preventDefault();
     }
+
 });
+    
 }
+
 function fade_to_next() {
   opacity--;
   var k = i + 1;
@@ -78,5 +82,10 @@ function checkinput(value){
 function checkinput1()
 {
     document.getElementById('imgZipCode').style.opacity = 1;
+}
+function activeLink(index1){
+   const links = document.getElementsByClassName("disactiveLink");
+   links.classList[0].toggle("activeLink");
+   console.log(links[index1]);
 }
 
