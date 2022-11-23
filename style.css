@@ -60,7 +60,12 @@ header{
 .headerClinvisibility{
 	display: grid;
 	z-index: 100;
+<<<<<<< HEAD
   grid-template-columns: 1fr 1fr;
+=======
+ 	grid-template-columns: 1fr 1fr;
+	position: fixed;
+>>>>>>> a746a6ee74cfc2ce5edf9bb070cbed74b3cad272
 	top: 0; 	
 	left: 0;
 	right: 0;
@@ -70,7 +75,10 @@ header{
 	margin-left: calc(var(--font )*5);
 	margin-right: calc(var(--font )*5);
 	visibility: hidden;
+<<<<<<< HEAD
 	position: fixed;
+=======
+>>>>>>> a746a6ee74cfc2ce5edf9bb070cbed74b3cad272
 }
 main{
 	margin-left: calc(var(--font )*5);
