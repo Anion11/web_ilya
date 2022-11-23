@@ -14,7 +14,7 @@ a{
 }
 html {
   height: 100%;
-  overflow-x:hidden;
+
 }
 body {
 	width: 100%;
@@ -60,7 +60,8 @@ header{
 	border-bottom: 1px solid #31353B;
 }
 .headerClinvisibility{
-	display: none;
+	visibility: hidden;
+	position: fixed;
 }
 main{
 	margin-left: calc(var(--font )*5);
