@@ -3,12 +3,9 @@ var interval = 5000;    // задержка между изображениям�
 var time_out = 1;       // задержка смены изображений
 var i = 0;
 var timeout;
-var timer = null;
 var opacity = 100;
 var isPause;
 var lastScrollTop = 100; //После какого значения появлется хэдер
-var new1;
-
 window.onload = function(){
 	document.querySelector("#imgZipCode").addEventListener("keypress", function (evt) {
     if (evt.which != 8 && evt.which != 0 && evt.which < 48 || evt.which > 57)
@@ -51,7 +48,6 @@ document.addEventListener("visibilitychange", function(){
 		isPause = false;   
 	}
 });
-
 function spawnHeader() {
     document.getElementsByClassName("headerClinvisibility")[0].style.visibility='visible';
 }
@@ -79,7 +75,6 @@ window.addEventListener('scroll', function() {
          }, 150);   
    }
 }, false);
-
 function checkinput(value){
 	if (value != ''){
 		document.getElementById('imgZipCode').style.opacity = 1;
@@ -88,8 +83,8 @@ function checkinput(value){
 		document.getElementById('imgZipCode').style.opacity = 0.4;
 	}
 }
-
 function checkinput1(){
+{
     document.getElementById('imgZipCode').style.opacity = 1;
 }
 
