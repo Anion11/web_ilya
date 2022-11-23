@@ -7,6 +7,7 @@ var timer = null;
 var opacity = 100;
 var isPause;
 var lastScrollTop = 100; //После какого значения появлется хэдер
+var new1;
 
 window.onload = function(){
 	document.querySelector("#imgZipCode").addEventListener("keypress", function (evt) {
