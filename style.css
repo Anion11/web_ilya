@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 :root {
-  --height_header: 64px;
+  --height_header: calc(var(--font )*3.3);
   --font: calc(1vw + 1vh);
 }
 *{
@@ -30,8 +30,9 @@ header{
 .headerCl {
 	margin-right: calc(var(--font )*5);
 	display: grid;
-	line-height:62px;
+	line-height:calc(var(--font )*3.3);
 	grid-template-columns: 1fr 1fr;
+	margin-top:calc(var(--font )*0.1);
 }
 .compName {
 	margin-right: calc(var(--font )*0.2);;
@@ -71,9 +72,9 @@ header{
 	top: 0; 	
 	left: 0;
 	right: 0;
-	height: 72px;
+	height: calc(var(--font )*3.5);/*'''''*/
 	background: rgba(250,247,248,0.9);
-	line-height:72px;
+	line-height:calc(var(--font )*3.5);
 	-webkit-box-shadow: 4px 4px 100px 58px rgba(34, 60, 80, 0.24);
 	-moz-box-shadow: 4px 4px 100px 58px rgba(34, 60, 80, 0.24);
 	box-shadow: 4px 4px 100px 58px rgba(34, 60, 80, 0.24);
@@ -87,7 +88,7 @@ header{
 	font-style: normal;
 	font-weight: 700;
 	font-size: calc(var(--font )*0.6);
-	line-height:62px;
+	line-height:calc(var(--font )*3.3);
 	margin-right: calc(var(--font )*5);;
 }
 .menuInvisibility a{
@@ -108,9 +109,9 @@ header{
 	width: 100%;
 }
 .activeLink:after{
-	position: absolute;
-	width: 100%;
-	left: 0;
+  position: absolute;
+  width: 100%;
+  left: 0;
   content:"";
   margin: 0 auto;
   height: 1px;
@@ -119,9 +120,9 @@ header{
   visibility: visible;
 }
 .disactiveLink:after{
-	position: absolute;
-	width: 100%;
-	left: 0;
+  position: absolute;
+  width: 100%;
+  left: 0;
   content:"";
   margin: 0 auto;
   height: 1px;
@@ -132,6 +133,7 @@ header{
 main{
 	margin-left: calc(var(--font )*5);
 	margin-right: calc(var(--font )*5);
+	margin-top:calc(var(--font )*0.5);
 }
 .blueBg{
 	width: 36%;
@@ -163,9 +165,10 @@ main{
 	background: url(Img/iconZipCode.png) no-repeat scroll calc(var(--font )*1);
 	background-size: calc(var(--font )*0.7);
 	padding-left:calc(var(--font )*2);
-	border-top: 2px solid #DADADA;
-	border-bottom: 2px solid #DADADA;
-	border-left: 2px solid #DADADA;
+	border-top: calc(var(--font )*0.1) solid #DADADA;
+	border-bottom: calc(var(--font )*0.1) solid #DADADA;
+	border-left: calc(var(--font )*0.1)solid #DADADA;
+	border-right: calc(var(--font )*0.1)solid #DADADA;
 	box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03),
   0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778),
   0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222),
@@ -183,6 +186,8 @@ main{
 	z-index: 3;
 	width: 100%;
 	height: calc(var(--font) * 3.7);
+	outline: none;
+	
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -191,11 +196,18 @@ input::-webkit-inner-spin-button {
 }
 #imgZipCode:focus {
   opacity: 1;
+  outline-width: 20px;
+  border-top: calc(var(--font )*0.1) solid #000000;
+  border-bottom: calc(var(--font )*0.1) solid #000000;
+  border-left: calc(var(--font )*0.1)solid #000000;
+  border-right: calc(var(--font )*0.1)solid #000000;
 }
+
 #imgZipCode:checked {
   opacity: 1;
 }
 #btnZipCode{
+
 	position: absolute;
 	font-family: 'Manrope';
 	font-style: normal;
@@ -295,7 +307,6 @@ input::-webkit-inner-spin-button {
 }
 .aboutWorksContainer {
 	margin-top: calc(var(--font) * 3);
-	width: calc(var(--font) * 55);
 	height: calc(var(--font) * 12);
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
