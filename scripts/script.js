@@ -89,6 +89,6 @@ function checkinput2(){
     
 }
 function activeLink(index1,index2){
-  
+    
 }
 
