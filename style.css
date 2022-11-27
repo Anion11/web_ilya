@@ -8,8 +8,7 @@
 
 	}
 :root {
-  --height_header: calc(var(--font )*3.3);
-  --font: calc(1vw + 1vh);
+  --x: calc(1vw + 1vh);
 }
 *{
 	margin: 0;
@@ -29,13 +28,13 @@ a{
 }
 header{
 	height: 72px;
-	margin-left: 9%;
 }
 .headerCl {
+	margin-left: 9%;
 	margin-right: 10%;
-    display: grid;
-    line-height: 72px;
-    grid-template-columns: 60% 40%;
+  display: grid;
+  line-height: 72px;
+  grid-template-columns: 60% 40%;
 }
 .compName {
 	font-family: 'Manrope', sans-serif;
@@ -70,7 +69,7 @@ header{
 	z-index: 100;
 	width: 100%;
 	display: grid;
-    grid-template-columns: 60% 40%;
+  grid-template-columns: 60% 40%;
 	top: 0; 	
 	left: 0;
 	right: 0;

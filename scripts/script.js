@@ -70,23 +70,14 @@ window.addEventListener('scroll', function() {
    }
 }, false);
 
-function checkinput(value){
-	if (value != ''){
-		document.getElementById('imgZipCode').style.opacity = 1;
-	}
-	else{
-		document.getElementById('imgZipCode').style.opacity = 0.4;
-	}
-}
-
-function checkinput1()
+function checkInputFocus()
 {
-    let id = document.getElementById('imgZipCode');
-    if (id.style.opacity !=1)
-        document.getElementById('imgZipCode').style.opacity = 1;
+    document.getElementById('imgZipCode').style.opacity = 1;
 }
-function checkinput2(){
-    
+function checkInputBlur(value){
+    if (value == ''){
+        document.getElementById('imgZipCode').style.opacity = 0.4;
+    }
 }
 function activeLink(index1,index2){
     
