@@ -162,7 +162,9 @@ main{
 	height: calc(var(--font) * 3.5);
 }
 .imgZipCode{
-	
+	-webkit-box-shadow: -25px 42px 24px -10px rgba(34, 60, 80, 0.1);
+	-moz-box-shadow: -25px 42px 24px -10px rgba(34, 60, 80, 0.1);
+	box-shadow: -25px 42px 24px -10px rgba(34, 60, 80, 0.1);
 }
 #imgZipCode{
 	position: relative;
