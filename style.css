@@ -70,8 +70,7 @@ header{
 	z-index: 100;
 	width: 100%;
 	display: grid;
-	justify-content: space-between;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 60% 40%;
 	top: 0; 	
 	left: 0;
 	right: 0;
@@ -85,19 +84,18 @@ header{
 	position: fixed;
 }
 .menuInvisibility{
-	justify-self: flex-end;
 	display: flex;
 	font-family: 'DM Sans';
 	font-style: normal;
+	justify-content: space-between;
 	font-weight: 700;
 	font-size: 13px;
 	line-height:62px;
-	margin-right: calc(var(--font )*5);;
+	margin-right: 10%;
 }
 .menuInvisibility a{
 	position: relative;
 	color: #31353B;
-	margin-left: 45px;
 }
 .menuInvisibility a:before{
 	position: absolute;
