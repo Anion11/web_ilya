@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@media (min-width: 992px) {
+
+
+	}
 :root {
   --height_header: calc(var(--font )*3.3);
   --font: calc(1vw + 1vh);
@@ -160,8 +164,12 @@ main{
 	width: 100%;
 	height: calc(var(--font) * 3.5);
 }
+.imgZipCode{
+	
+}
 #imgZipCode{
 	position: relative;
+	
 	background: url(Img/iconZipCode.png) no-repeat scroll calc(var(--font )*1);
 	background-size: calc(var(--font )*0.7);
 	padding-left:calc(var(--font )*2);
@@ -187,7 +195,6 @@ main{
 	width: 100%;
 	height: calc(var(--font) * 3.7);
 	outline: none;
-	
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -202,12 +209,10 @@ input::-webkit-inner-spin-button {
   border-left: calc(var(--font )*0.1)solid #000000;
   border-right: calc(var(--font )*0.1)solid #000000;
 }
-
 #imgZipCode:checked {
   opacity: 1;
 }
 #btnZipCode{
-
 	position: absolute;
 	font-family: 'Manrope';
 	font-style: normal;
@@ -367,18 +372,20 @@ input::-webkit-inner-spin-button {
 }
 
 footer{
+
 }
 .footer{
 	display: grid;
-	margin-left: calc(var(--font )*9);
-	margin-right: calc(var(--font )*9);
+	margin-left: 15%;
+	margin-right: 15%;
 	grid-template-rows: 1fr auto;
 }
 .footerHr{
 	border: 1px solid #DEDFE1;
 }
 .footerLogoNav{
-	margin-top: calc(var(--font )*2);
+	width: 100%;
+	margin-top: 4%;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
@@ -386,35 +393,33 @@ footer{
 	font-family: 'Manrope';
 	font-style: normal;
 	font-weight: 800;
-	font-size: calc(var(--font ) * 0.9);
+	font-size: 23px;
 	line-height: 31px;
 	color: #31353B;
-	margin-right: calc(var(--font ) * 2);
+	margin-right: 4%;
 }
 .footerNav{
 	display: flex;
+	justify-content: space-between;
 	font-family: 'DM Sans';
 	font-style: normal;
 	font-weight: 700;
-	font-size: calc(var(--font )*0.6);
+	font-size:13px;
 	line-height: 17px;
 }
 .footerNav a{
-	margin-right: calc(var(--font ) * 1.5);
 	color: #31353B;
 }
 .footerNav a:hover{
 	border-bottom: 1px solid #31353B;
 }
 .copyright{
-	margin-top: calc(var(--font) * 1.5);
-	margin-bottom: calc(var(--font )*0.7);
-	width: 100%;
+	margin-top: 5%;
 	text-align: center;
 	font-family: 'DM Sans';
 	font-style: normal;
 	font-weight: 700;
-	font-size: calc(var(--font )*0.5);
+	font-size: 12px;
 	line-height: 16px;
 	color: #31353B;
 }
