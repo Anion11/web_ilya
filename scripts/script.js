@@ -84,6 +84,6 @@ function checkinput1()
     document.getElementById('imgZipCode').style.opacity = 1;
 }
 function activeLink(index1,index2){
-  
+    
 }
 
