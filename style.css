@@ -32,9 +32,9 @@ header{
 .headerCl {
 	margin-left: 9%;
 	margin-right: 10%;
-  display: grid;
-  line-height: 72px;
-  grid-template-columns: 60% 40%;
+  	display: grid;
+  	line-height: 72px;
+  	grid-template-columns: 60% 40%;
 }
 .compName {
 	font-family: 'Manrope', sans-serif;
@@ -119,9 +119,11 @@ header{
   bottom: 0;
 }
 main{
-	margin-left: calc(var(--font )*5);
-	margin-right: calc(var(--font )*5);
-	margin-top:calc(var(--font )*0.5);
+	margin-top:0.5%;
+	width: 100%;
+	max-width: 1840px;
+	margin: 0 auto;
+	
 }
 .blueBg{
 	width: 36%;
@@ -132,18 +134,20 @@ main{
 	background-color: #BDCCFF;
 }
 .firstContainer {
-	height: calc(100vh - var(--height_header));
+	width: 82%;
 	display: grid;
-	grid-template-columns:60% 40%;
+	margin-top: 5%;
+	margin: 0 auto;
+	grid-template-columns:50% 50% ;
 }
 .textAndButton {
   justify-self:start;
-  margin-top: var(--font );
+  margin-top: 5%;
   width: 100%;
   z-index: 3;
 }
 .imgBtnZipCode{
-	margin-top: calc(var(--font )*2);
+	margin-top: 8%;
 	height: calc(var(--font )*3);
 	width: 100%;
 	height: calc(var(--font) * 3.5);
@@ -156,13 +160,13 @@ main{
 #imgZipCode{
 	position: relative;
 	
-	background: url(Img/iconZipCode.png) no-repeat scroll calc(var(--font )*1);
-	background-size: calc(var(--font )*0.7);
-	padding-left:calc(var(--font )*2);
-	border-top: calc(var(--font )*0.1) solid #DADADA;
-	border-bottom: calc(var(--font )*0.1) solid #DADADA;
-	border-left: calc(var(--font )*0.1)solid #DADADA;
-	border-right: calc(var(--font )*0.1)solid #DADADA;
+	background: url(Img/iconZipCode.png) no-repeat scroll 25px;
+	background-size: 3%;
+	padding-left:8%;
+	border-top: 1px solid #DADADA;
+	border-bottom:  1px solid #DADADA;
+	border-left:  1px solid #DADADA;
+	border-right:  1px solid #DADADA;
 	box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03),
   0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778),
   0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222),
@@ -172,14 +176,14 @@ main{
 	font-family: 'Manrope';
 	font-style: normal;
 	font-weight: 400;
-	font-size: calc(var(--font )*0.8);
-	line-height: calc(var(--font )*0.8);
+	font-size: 20px;
+	line-height: 20px;
 	letter-spacing: 0.01em;
 	color: #31353B;
 	opacity: 0.4;
 	z-index: 3;
 	width: 100%;
-	height: calc(var(--font) * 3.7);
+	height: 86px;
 	outline: none;
 }
 input::-webkit-outer-spin-button,
@@ -190,10 +194,10 @@ input::-webkit-inner-spin-button {
 #imgZipCode:focus {
   opacity: 1;
   outline-width: 20px;
-  border-top: calc(var(--font )*0.1) solid #000000;
-  border-bottom: calc(var(--font )*0.1) solid #000000;
-  border-left: calc(var(--font )*0.1)solid #000000;
-  border-right: calc(var(--font )*0.1)solid #000000;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
 }
 #imgZipCode:checked {
   opacity: 1;
@@ -203,16 +207,16 @@ input::-webkit-inner-spin-button {
 	font-family: 'Manrope';
 	font-style: normal;
 	font-weight: 700;
-	font-size: calc(var(--font )*0.7);
-	line-height: calc(var(--font )*0.8);
+	font-size: 17px;
+	line-height: 23px;
 	letter-spacing: 0.01em;
 	color: #FFFFFF;
 	text-align: center;
 	background: #F85A47;
 	border: none;
 	z-index: 3;
-	width: calc(var(--font) * 7.7);
-	height: calc(var(--font) * 3.7);
+	width: 188px;
+	height: 86px;
 }
 #btnZipCode:hover{
 	opacity: 0.9;
@@ -223,16 +227,15 @@ input::-webkit-inner-spin-button {
 	transform: scale(0.99);
 }
 .partners{
-	position: absolute;
-	bottom: 0;
+	margin-top: 40%;
 }
 .partners div{
 	display: grid;
 	grid-auto-columns: min-content;
 	grid-auto-flow: column;
 	align-items: center;
-	gap: calc(var(--font )*3);
-	margin-bottom: calc(var(--font )*0.2);;
+	gap: 50px;
+	margin-bottom: 1%;
 }
 .containerImage {
 	position: relative;
@@ -244,25 +247,30 @@ input::-webkit-inner-spin-button {
 	display: grid;
     grid-template-areas:
 	" A ";
+	width: 100%;
     
 }
 #img_1 {
 	opacity: 100; 
-	filter: alpha(opacity=100);	
-	width: calc(var(--font )*23);
+	filter: alpha(opacity=100);
+	width: 100%;
 	
 }
 #img_2 {
 	opacity: 100; 
 	filter: alpha(opacity=100);
-	width: calc(var(--font )*23);
+	width: 100%;
 }
 .imgBot {	
   z-index: 1;
 	grid-area: A;
+	max-width: 1100px;
+	min-width: 603px;
 }
 .imgTop{
 	grid-area: A;
+	max-width: 1100px;
+	min-width: 603px;
 }
 
 .containerSocialNetwork{

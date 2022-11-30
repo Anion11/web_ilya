@@ -54,6 +54,7 @@ document.addEventListener("visibilitychange", function(){
 		isPause = false;   
 	}
 });
+
 function spawnHeader() {
     document.getElementsByClassName("headerClinvisibility")[0].style.visibility='visible';
 }
@@ -75,11 +76,13 @@ function checkInputFocus()
 {
     document.getElementById('imgZipCode').style.opacity = 1;
 }
+
 function checkInputBlur(value){
     if (value == ''){
         document.getElementById('imgZipCode').style.opacity = 0.4;
     }
 }
+
 function activeLink(index1,index2,index3){
     for (let i = 0; i < links.length; i++){
         links[i].classList.remove("activeLink");
