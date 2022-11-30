@@ -8,7 +8,7 @@
 
 	}
 :root {
-  --x: calc(1vw + 1vh);
+  --font: calc(1vw + 1vh);
 }
 *{
 	margin: 0;
@@ -117,18 +117,6 @@ header{
   height: 1px;
   background: #31353B;
   bottom: 0;
-  visibility: visible;
-}
-.disactiveLink:after{
-  position: absolute;
-  width: 100%;
-  left: 0;
-  content:"";
-  margin: 0 auto;
-  height: 1px;
-  background: #31353B;
-  bottom: 0;
-  visibility: hidden;
 }
 main{
 	margin-left: calc(var(--font )*5);
@@ -407,6 +395,7 @@ footer{
 }
 .footerNav a{
 	color: #31353B;
+	position: relative;
 }
 .footerNav a:hover{
 	border-bottom: 1px solid #31353B;
