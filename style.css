@@ -32,9 +32,9 @@ header{
 .headerCl {
 	margin-left: 9%;
 	margin-right: 10%;
-  	display: grid;
-  	line-height: 72px;
-  	grid-template-columns: 60% 40%;
+  display: grid;
+  line-height: 72px;
+  grid-template-columns: 60% 40%;
 }
 .compName {
 	font-family: 'Manrope', sans-serif;
@@ -42,6 +42,7 @@ header{
 }
 .menu {
 	width: 100%;
+	min-width: 300px;
 	display: flex;
 	justify-content: space-between;
 	font-family: 'DM Sans';
@@ -84,6 +85,7 @@ header{
 }
 .menuInvisibility{
 	display: flex;
+	min-width: 300px;
 	font-family: 'DM Sans';
 	font-style: normal;
 	justify-content: space-between;
@@ -121,7 +123,7 @@ header{
 main{
 	margin-top:0.5%;
 	width: 100%;
-	max-width: 1840px;
+	max-width: 1920px;
 	margin: 0 auto;
 	
 }
@@ -135,22 +137,24 @@ main{
 }
 .firstContainer {
 	width: 82%;
+	max-height: 100vh;
+	min-height: 850px;
 	display: grid;
 	margin-top: 5%;
 	margin: 0 auto;
 	grid-template-columns:50% 50% ;
 }
 .textAndButton {
+	position: relative;
   justify-self:start;
+  height: 100%;
   margin-top: 5%;
   width: 100%;
   z-index: 3;
 }
 .imgBtnZipCode{
 	margin-top: 8%;
-	height: calc(var(--font )*3);
 	width: 100%;
-	height: calc(var(--font) * 3.5);
 }
 .imgZipCode{
 	-webkit-box-shadow: -25px 39px 36px -5px rgba(34, 60, 80, 0.12);
@@ -159,10 +163,9 @@ main{
 }
 #imgZipCode{
 	position: relative;
-	
 	background: url(Img/iconZipCode.png) no-repeat scroll 25px;
-	background-size: 3%;
-	padding-left:8%;
+	background-size: 20px;
+	padding-left:50px;
 	border-top: 1px solid #DADADA;
 	border-bottom:  1px solid #DADADA;
 	border-left:  1px solid #DADADA;
@@ -227,7 +230,8 @@ input::-webkit-inner-spin-button {
 	transform: scale(0.99);
 }
 .partners{
-	margin-top: 40%;
+	position: absolute;
+	bottom: 0;
 }
 .partners div{
 	display: grid;
