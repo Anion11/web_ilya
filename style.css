@@ -351,7 +351,7 @@ input::-webkit-inner-spin-button {
 }
 .footer{
 	display: grid;
-	width: 85%;
+	width: 65%;
 	max-width: 1920px;
 	margin: 0 auto;
 	grid-template-rows: 1fr auto;
@@ -363,6 +363,7 @@ input::-webkit-inner-spin-button {
 	width: 100%;
 	margin-top: 60px;
 	display: grid;
+	margin-left: 5px;
 	grid-template-columns: 1fr 1fr;
 }
 .footerLogo{
