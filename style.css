@@ -308,7 +308,6 @@ input::-webkit-inner-spin-button {
 	height: calc(var(--font) * 4);
 	border-radius: 20px;
 }
-
 .cardAboutImg {
 	background-color: #9672FF;
 }
@@ -319,7 +318,6 @@ input::-webkit-inner-spin-button {
 	background-color: #F2B8EC;
 	
 }
-
 .headingCard {
 	font-family: 'Manrope', sans-serif;
 	font-weight: 600;
