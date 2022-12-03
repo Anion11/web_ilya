@@ -4,8 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 @media (min-width: 992px) {
-
-
 	}
 :root {
   --font: calc(1vw + 1vh);
@@ -21,13 +19,13 @@ html {
 body {
 	display: grid;
 	grid-template-rows: auto 1fr auto;
-	min-height: 100%;
 }
 a{
 	text-decoration: none;
 }
 header{
 	height: 72px;
+	margin-bottom: 100px;
 }
 .headerCl {
 	margin-left: 9%;
@@ -121,45 +119,36 @@ header{
   bottom: 0;
 }
 main{
-	margin-top:0.5%;
 	width: 100%;
 	max-width: 1920px;
 	margin: 0 auto;
-	
 }
 .blueBg{
 	width: 36%;
 	z-index: -1;
-	height: 100vh;
+	height: calc(var(--vh, 1vh) * 100);
 	position: absolute;
 	right: 0;
 	background-color: #BDCCFF;
 }
 .firstContainer {
 	width: 82%;
-	max-height: 100vh;
-	min-height: 850px;
+	max-height: calc(var(--vh, 1vh) * 100 - 172px);
+	min-height: calc(var(--vh, 1vh) * 100 - 172px);
 	display: grid;
-	margin-top: 5%;
 	margin: 0 auto;
-	grid-template-columns:50% 50% ;
+	grid-template-columns:50% 50%;
+	grid-template-rows: 80% 19% 1%;
 }
 .textAndButton {
-	position: relative;
-  justify-self:start;
-  height: 100%;
-  margin-top: 5%;
-  width: 100%;
+  padding-top: 5%;
   z-index: 3;
-}
-.imgBtnZipCode{
-	margin-top: 8%;
-	width: 100%;
 }
 .imgZipCode{
 	-webkit-box-shadow: -25px 39px 36px -5px rgba(34, 60, 80, 0.12);
 	-moz-box-shadow: -25px 39px 36px -5px rgba(34, 60, 80, 0.12);
 	box-shadow: -25px 39px 36px -5px rgba(34, 60, 80, 0.12);
+	margin-top: 48px;
 }
 #imgZipCode{
 	position: relative;
@@ -229,73 +218,59 @@ input::-webkit-inner-spin-button {
 	box-shadow:1px 1px 2px rgba(0,0,0,0.7) inset;
 	transform: scale(0.99);
 }
-.partners{
-	position: absolute;
-	bottom: 0;
-}
-.partners div{
-	display: grid;
-	grid-auto-columns: min-content;
-	grid-auto-flow: column;
-	align-items: center;
-	gap: 50px;
-	margin-bottom: 1%;
-}
 .containerImage {
 	position: relative;
-	width: 100%;
 }
 .imgs {
 	overflow-x: hidden;
 	justify-self: start;
 	display: grid;
-    grid-template-areas:
+  grid-template-areas:
 	" A ";
-	width: 100%;
-    
-}
-#img_1 {
-	opacity: 100; 
-	filter: alpha(opacity=100);
-	width: 100%;
-	
-}
-#img_2 {
-	opacity: 100; 
-	filter: alpha(opacity=100);
-	width: 100%;
+  align-items: center;
+  height: 100%;
 }
 .imgBot {	
-  z-index: 1;
 	grid-area: A;
-	max-width: 1100px;
-	min-width: 603px;
 }
 .imgTop{
 	grid-area: A;
-	max-width: 1100px;
-	min-width: 603px;
 }
-
+#img_1 {
+	opacity: 100;
+	filter: alpha(opacity=100);
+}
+#img_2 {
+	opacity: 0;
+	filter: alpha(opacity=100);
+}
 .containerSocialNetwork{
 	position: absolute;
 	right: 0;
-	margin-right: calc(var(--font )*1.1);
+	margin-right: calc(-20px - 15%);
 	display: grid;
-	height: calc(var(--font )*20);
-	justify-items: end;
-	align-items: center;
 }
 .socialNetwork{
 	align-self: center;
 	z-index: 5;
+	gap: 40px;
 	display: grid;
-	gap: calc(var(--font )*1.5);
 	text-align: center;
 }
-
-.partners img{
-
+.partners{
+	position: relative;
+	min-height: 100px;
+}
+.partnersInf{
+	position: absolute;
+	bottom: 0;
+}
+.partnersImg{
+	display: grid;
+	grid-auto-columns: min-content;
+	grid-auto-flow: column;
+	align-items: center;
+	gap: 50px;
 }
 .secondContainer {
 	margin-top: calc(var(--font) * 10);
