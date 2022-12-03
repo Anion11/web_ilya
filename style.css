@@ -127,8 +127,7 @@ main{
 .blueBg{
 	width: 36%;
 	z-index: -1;
-	min-height: calc(var(--vh, 1vh) * 100);
-	height: 100vh;
+	height: calc(var(--vh, 1vh) * 100);
 	position: absolute;
 	right: 0;
 	margin-top: -172px;
@@ -138,8 +137,7 @@ main{
 .firstContainer {
 	position: relative;
 	width: 82%;
-	height: calc(100vh - 172px);
-	min-height: calc(var(--vh, 1vh) * 100 - 172px);
+	height: calc(var(--vh, 1vh) * 100 - 172px);
 	display: grid;
 	margin: 0 auto;
 	grid-template-columns:50% 50%;
@@ -227,12 +225,11 @@ input::-webkit-inner-spin-button {
 	position: relative;
 }
 .imgs {
-	overflow-x: hidden;
+	/*overflow-x: hidden;*/
 	justify-self: start;
 	display: grid;
   grid-template-areas:
 	" A ";
-  align-items: center;
   height: 100%;
 }
 .imgBot {	
@@ -251,6 +248,7 @@ input::-webkit-inner-spin-button {
 }
 .containerSocialNetwork{
 	position: absolute;
+	align-self: center;
 	right: 0;
 	margin-right: calc(-20px - 15%);
 	display: grid;
@@ -348,14 +346,11 @@ input::-webkit-inner-spin-button {
 .sixthContainer {
 
 }
-
-footer{
-
-}
 .footer{
 	display: grid;
-	margin-left: 15%;
-	margin-right: 15%;
+	width: 82%;
+	max-width: 1920px;
+	margin: 0 auto;
 	grid-template-rows: 1fr auto;
 }
 .footerHr{
@@ -363,7 +358,7 @@ footer{
 }
 .footerLogoNav{
 	width: 100%;
-	margin-top: 4%;
+	margin-top: 60px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
@@ -374,7 +369,6 @@ footer{
 	font-size: 23px;
 	line-height: 31px;
 	color: #31353B;
-	margin-right: 4%;
 }
 .footerNav{
 	display: flex;
@@ -393,7 +387,8 @@ footer{
 	border-bottom: 1px solid #31353B;
 }
 .copyright{
-	margin-top: 5%;
+	margin-top: 69px;
+	margin-bottom: 36px;
 	text-align: center;
 	font-family: 'DM Sans';
 	font-style: normal;
