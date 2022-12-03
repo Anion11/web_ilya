@@ -29,8 +29,8 @@ header{
 	margin-bottom: 100px;
 }
 .headerCl {
-	margin-left: 9%;
-	margin-right: 10%;
+	width: 85%;
+	margin: 0 auto;
   display: grid;
   line-height: 72px;
   grid-template-columns: 60% 40%;
@@ -131,20 +131,20 @@ main{
 	position: absolute;
 	right: 0;
 	margin-top: -172px;
-	margin-right: -11%;
+	margin-right: -8.8%;
 	background-color: #BDCCFF;
 }
 .firstContainer {
 	position: relative;
-	width: 82%;
+	width: 85%;
 	height: calc(var(--vh, 1vh) * 100 - 172px);
 	display: grid;
 	margin: 0 auto;
-	grid-template-columns:50% 50%;
+	grid-template-columns:55% 45%;
 	grid-template-rows: 80% 19% 1%;
 }
 .textAndButton {
-  padding-top: 5%;
+  padding-top: 8%;
   z-index: 3;
 }
 .imgZipCode{
@@ -225,7 +225,6 @@ input::-webkit-inner-spin-button {
 	position: relative;
 }
 .imgs {
-	/*overflow-x: hidden;*/
 	justify-self: start;
 	display: grid;
   grid-template-areas:
@@ -240,17 +239,21 @@ input::-webkit-inner-spin-button {
 }
 #img_1 {
 	opacity: 100;
+	min-height: 438px;
+	width: 100%;
 	filter: alpha(opacity=100);
 }
 #img_2 {
 	opacity: 0;
+	min-height: 438px;
+	width: 100%;
 	filter: alpha(opacity=100);
 }
 .containerSocialNetwork{
 	position: absolute;
 	align-self: center;
 	right: 0;
-	margin-right: calc(-20px - 15%);
+	margin-right: -15%;
 	display: grid;
 }
 .socialNetwork{
@@ -348,7 +351,7 @@ input::-webkit-inner-spin-button {
 }
 .footer{
 	display: grid;
-	width: 82%;
+	width: 85%;
 	max-width: 1920px;
 	margin: 0 auto;
 	grid-template-rows: 1fr auto;

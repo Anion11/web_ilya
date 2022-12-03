@@ -39,7 +39,7 @@ function fade_to_next() {
   }
 }
 
- window.setInterval(
+window.setInterval(
     function change() {
       if(!isPause) {
         i++;
