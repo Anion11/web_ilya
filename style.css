@@ -279,28 +279,29 @@ input::-webkit-inner-spin-button {
 	gap: 50px;
 }
 .secondContainer {
-	margin-top: calc(var(--font) * 10);
-	height: calc(100vh - var(--height_header));
+	margin-top: 20%;
+	height: calc(var(--vh, 1vh) * 100 - 172px);
 }
 .headingText {
 	font-family: 'Manrope', sans-serif;
 	text-align: center;
 	font-weight: 600;
-	font-size: calc(var(--font )*1.3);
-	line-height: calc(var(--font )*0.8);
+	font-size: 55px;
+	line-height: 100%;
 }
 .aboutWorksContainer {
-	margin-top: calc(var(--font) * 3);
-	height: calc(var(--font) * 12);
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: calc(var(--font) * 10);
+	margin: 0 auto;
+	display: flex;
+	flex-wrap:nowrap ;
+	margin-top: 70px;
+	height: 50%;
 }
 .cardAbout {
 	text-align: center;
 	justify-items: center;
 	display: grid;
 	grid-template-rows: 1fr 1fr;
+	width: 387px;
 }
 .cardAboutImg,.cardAboutImg1, .cardAboutImg2{
 	padding-top: calc(var(--font) * 1.3);
@@ -319,7 +320,11 @@ input::-webkit-inner-spin-button {
 	background-color: #F2B8EC;
 	
 }
-
+.gradientHr1, .gradientHr {
+	transform: rotate(90deg);
+	width: 1px;
+	height: 191.5px;
+}
 .headingCard {
 	font-family: 'Manrope', sans-serif;
 	font-weight: 600;

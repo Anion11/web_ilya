@@ -8,15 +8,16 @@ var opacity = 100;
 var isPause;
 var lastScrollTop = 50; //После какого значения появлется хэдер
 var links;
-let vh = window.innerHeight * 0.01;
+const vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
+
 window.onload = function(){
 	document.querySelector("#imgZipCode").addEventListener("keypress", function (evt) {
     if (evt.which != 8 && evt.which != 0 && evt.which < 48 || evt.which > 57)
     {
         evt.preventDefault();
     }
-   
+ 
 });
    links = document.getElementsByClassName("disActiveLink");
    activeLink(0,6,12);
@@ -69,6 +70,7 @@ window.addEventListener('scroll', function() {
     var st = window.pageYOffset;
     if (st > lastScrollTop){
         spawnHeader();
+        console.log(st);
    } else {
         hideHeader();
    }
