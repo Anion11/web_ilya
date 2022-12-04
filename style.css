@@ -279,10 +279,13 @@ input::-webkit-inner-spin-button {
 	gap: 50px;
 }
 .secondContainer {
-	margin-top: 20%;
+	margin: 0 auto;
+	width: 85%;
 	height: calc(var(--vh, 1vh) * 100 - 172px);
 }
 .headingText {
+	margin-top: 20%;
+	margin-bottom: 20px;
 	font-family: 'Manrope', sans-serif;
 	text-align: center;
 	font-weight: 600;
@@ -290,24 +293,40 @@ input::-webkit-inner-spin-button {
 	line-height: 100%;
 }
 .aboutWorksContainer {
-	margin: 0 auto;
-	display: flex;
-	flex-wrap:nowrap ;
-	margin-top: 70px;
-	height: 50%;
+	grid-template-areas: 
+            "a b c d e"
+            "a b c d e"
+            "a b c d e" ;
+  height: 100%;
+  position: relative;
+	display: grid;
+	justify-items: center;
+	justify-content: space-evenly;
 }
 .cardAbout {
-	text-align: center;
 	justify-items: center;
 	display: grid;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: 15% 15% 1fr;
 	width: 387px;
 }
+#q1{
+	grid-area: a;
+}
+#q2{
+	grid-area: c;
+}
+#q3{
+	grid-area: e;
+}
 .cardAboutImg,.cardAboutImg1, .cardAboutImg2{
-	padding-top: calc(var(--font) * 1.3);
-	width: calc(var(--font) * 4);
-	height: calc(var(--font) * 4);
+	position: relative;
+	width: 30%;
+	height: 100%;
+	display: flex;
 	border-radius: 20px;
+}
+.cardAboutImg img,.cardAboutImg1 img, .cardAboutImg2 img{
+  margin: auto;
 }
 .cardAboutImg {
 	background-color: #9672FF;
@@ -317,26 +336,53 @@ input::-webkit-inner-spin-button {
 }
 .cardAboutImg2 {
 	background-color: #F2B8EC;
-	
+}
+.hrcircule{
+	position: relative;
+	align-self: center;
+	width: 200px;
+}
+.hrcircule1{
+	position: relative;
+	grid-area: d/c/d/e;
+	width: 100px;
+}
+.circulpurple, .circulblue{
+	position: absolute;
+	margin-top:-5.5px ;
+	top: 0;
+	width: 11px;
+	height: 11px;
+	border-radius: 100px;
+	z-index: 5;
+}
+.circulblue{
+	right: 0;
+	background: #4DDFFD;
+}
+.circulpurple{
+	background: #9672FF;
 }
 .gradientHr1, .gradientHr {
-	transform: rotate(90deg);
-	width: 1px;
-	height: 191.5px;
+	border: 1px dashed #ddd;
+	background: linear-gradient(to right, transparent 50%, #123 50%), 
+				linear-gradient(to right, blue, red);
+	background-size: 16px 2px, 100% 2px;
 }
 .headingCard {
+	text-align: center;
 	font-family: 'Manrope', sans-serif;
 	font-weight: 600;
-	font-size: calc(var(--font )*1);
-	line-height: calc(var(--font )*1);
+	font-size: 22px;
+	line-height: 30px;
 }
-
 .textInCard {
+	text-align: center;
 	font-weight: 400;
-	margin-top: calc(var(--font) * 1);
+	margin-top: 15px;
 	font-family: 'Manrope', sans-serif;
-	font-size: calc(var(--font )*0.8);
-	line-height: calc(var(--font )*0.8);
+	font-size: 16px;
+	line-height: 26px;
 }
 .thirdContainer {
 
