@@ -309,7 +309,6 @@ input::-webkit-inner-spin-button {
 	height: calc(var(--font) * 4);
 	border-radius: 20px;
 }
-
 .cardAboutImg {
 	background-color: #9672FF;
 }
