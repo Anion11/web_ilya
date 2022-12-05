@@ -309,13 +309,13 @@ input::-webkit-inner-spin-button {
 	grid-template-rows: 15% 15% 1fr;
 	width: 387px;
 }
-#q1{
+#cardAboutAreaFirst{
 	grid-area: a;
 }
-#q2{
+#cardAboutAreaSecond{
 	grid-area: c;
 }
-#q3{
+#cardAboutAreaThird{
 	grid-area: e;
 }
 .cardAboutImg,.cardAboutImg1, .cardAboutImg2{
@@ -337,17 +337,31 @@ input::-webkit-inner-spin-button {
 .cardAboutImg2 {
 	background-color: #F2B8EC;
 }
-.hrcircule{
+.hrCircleFirst{
 	position: relative;
 	align-self: center;
-	width: 200px;
+	width: 80%;
+	margin: 0 10%;
 }
-.hrcircule1{
-	position: relative;
+.parentForHrFirst {
+	width: 33%;
+	display: flex; 
+	height: 15%; 
+	grid-area: b/a/b/c;
+}
+.parentForHrSecond {
+	display: flex; 
+	width: 33%;
+	height: 15%; 
 	grid-area: d/c/d/e;
-	width: 100px;
 }
-.circulpurple, .circulblue{
+.hrCircleSecond{
+	position: relative;
+	align-self: center;
+	width: 80%;
+	margin: 0 10%;
+}
+.circlpurple, .circlblue{
 	position: absolute;
 	margin-top:-5.5px ;
 	top: 0;
@@ -356,18 +370,37 @@ input::-webkit-inner-spin-button {
 	border-radius: 100px;
 	z-index: 5;
 }
-.circulblue{
+.hrCircleFirst .circlblue{
 	right: 0;
 	background: #4DDFFD;
 }
-.circulpurple{
+.circlpurple{
 	background: #9672FF;
 }
-.gradientHr1, .gradientHr {
-	border: 1px dashed #ddd;
-	background: linear-gradient(to right, transparent 50%, #123 50%), 
-				linear-gradient(to right, blue, red);
-	background-size: 16px 2px, 100% 2px;
+.circlblue {
+	background: #4DDFFD;
+}
+.hrCircleSecond .circlpurple {
+	right: 0;
+	background: #9672FF;
+}
+
+.gradientHrFirst  {
+	opacity: 0.5;
+	height: 2px;
+	border: none;
+	background: linear-gradient(to right, transparent 50%, #fff 50%),
+	   linear-gradient(to right, #9672FF, #4DDFFD);
+	background-size: 12px 2px, 100%;
+}
+.gradientHrSecond
+{
+	opacity: 0.5;
+	height: 2px;
+	border: none;
+	background: linear-gradient(to right, transparent 50%, #fff 50%),
+	   linear-gradient(to right, #4DDFFD, #9672FF);
+	background-size: 12px 2px, 100%;
 }
 .headingCard {
 	text-align: center;
