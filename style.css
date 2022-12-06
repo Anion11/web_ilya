@@ -447,13 +447,101 @@ input::-webkit-inner-spin-button {
 	flex-wrap: nowrap;
 }
 .fourthContainer {
+	width: 85%;
 	height: calc(var(--vh, 1vh) * 100 - 172px);
-}
-.qwe{
 	margin: 0 auto;
 }
+.fourthContainerHead{
+	height: 5%;
+	text-align: center;
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 55px;
+	margin: 5% 0;
+}
+.fourthContainerMain{
+	background: #F1FFFF;
+	width: 100%;
+	height: 90%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.fourthContainerMainLeft{
+	margin-left: 39px;
+	margin-top: 23px;
+}
+.fourthContainerMainRightINFO{
+	margin-right: 50%;
+}
+.fourthContainerMainRight span{
+	display: block;
+}
+.fourthContainerMainRightHeader{
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 31px;
+	line-height: 42px;
+	color: #000000;
+	margin-bottom: 28px;
+	margin-top: 82px;
+}
+.fourthContainerMainRightMainText{
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: #545A58;
+	max-width: 340px;
+	margin-bottom: 42px;
+}
+.fourthContainerMainRight table{
+	width: 100%;
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 23px;
+	text-align: left;
+}
+.fourthContainerMainRight button{
+	border: none;
+	width: 100%;
+	height: 100%;
+	max-height: 53px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	background-color: #F85A47;;
+	text-align: center;
+	color: #FFFFFF;
+	box-shadow: 0px 100px 80px rgba(248, 90, 71, 0.07),
+	 						0px 64.8148px 46.8519px rgba(248, 90, 71, 0.0531481),
+	  					0px 38.5185px 25.4815px rgba(248, 90, 71, 0.0425185),
+	  				 	0px 20px 13px rgba(248, 90, 71, 0.035),
+	    				0px 8.14815px 6.51852px rgba(248, 90, 71, 0.0274815),
+	     				0px 1.85185px 3.14815px rgba(248, 90, 71, 0.0168519);
+	border-radius: 5px;
+	min-width: 412px;
+	margin-top: 54px;
+}
+.fourthContainerMainRight button:hover{
+	opacity: 0.9;
+	cursor: pointer;
+}
+.fourthContainerMainRight button:active{
+	box-shadow:1px 1px 2px rgba(0,0,0,0.7) inset;
+	transform: scale(0.99);
+}
 .fivesContainer {
-
+	width: 85%;
+	height: calc(var(--vh, 1vh) * 100 - 172px);
+	margin: 0 auto;
 }
 
 .sixthContainer {
