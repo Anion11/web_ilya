@@ -333,12 +333,21 @@ input::-webkit-inner-spin-button {
 }
 .cardAboutImg {
 	background-color: #9672FF;
+	-webkit-box-shadow: -6px 71px 66px -41px rgba(150, 114, 255, 1);
+	-moz-box-shadow: -6px 71px 66px -41px rgba(150, 114, 255, 1);
+	box-shadow: -6px 71px 66px -41px rgba(150, 114, 255, 1);
 }
 .cardAboutImg1 {
 	background-color: #4DDFFD;
+	-webkit-box-shadow: -6px 71px 66px -41px rgba(77, 223, 253, 1);
+	-moz-box-shadow: -6px 71px 66px -41px rgba(77, 223, 253, 1);
+	box-shadow: -6px 71px 66px -41px rgba(77, 223, 253, 1);
 }
 .cardAboutImg2 {
 	background-color: #F2B8EC;
+	-webkit-box-shadow: -6px 71px 66px -41px rgba(242, 184, 236, 1);
+	-moz-box-shadow: -6px 71px 66px -41px rgba(242, 184, 236, 1);
+	box-shadow: -6px 71px 66px -41px rgba(242, 184, 236, 1);
 }
 .hrCircleFirst{
 	position: relative;
