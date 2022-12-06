@@ -438,14 +438,89 @@ input::-webkit-inner-spin-button {
 .galleryConatiner {
 	display: grid;
 	grid-template-rows: 25% 75%;
+	row-gap: 50px;
+	width: 100%;
+}
+.buttonInText {
+	display: grid;
+	grid-template-areas: 'A B'
+						 'C B'	;
 }
 .headerTxtInContainer {
+	grid-area: A;
+	font-family: 'Manrope', sans-serif;
+	font: normal;
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 55px;
+	margin-left: 30px;
+	Line-height: 100%;
+}
+
+.textInGaleery {
+
+	grid-area: C;
+	margin-left: 30px;
+	margin-top: 10px;
+	font-family: 'Manrope',sans-serif;
+	font: normal;
+	font-weight: 400;
+    font-size: 16px;
+    line-height:24px;
+    line-height:110%;
+	width: 476px;
 
 }
 .galleryPhoto {
+	display: grid;
+	grid-template-rows: 15% 85%;
+}
+.namesHouse a {
+	margin-left: 2.6%;
+}
+.namesHouse {
+	width: 75%;
+	display: flex;
+	flex-wrap: nowrap;
+	font-family: 'Manrope',sans-serif;
+	font-size: 19px;
+	line-height: 26px;
+	line-height: 100%;
+}
+.imgHouse {
 	display: flex;
 	flex-wrap: nowrap;
 }
+.galleryPhoto img {
+	margin-left: 30px;
+	width: 35%;
+}
+
+.buttonViewGallery:hover{
+	opacity: 0.9;
+	cursor: pointer;
+}
+.buttonViewGallery:active{
+	box-shadow:1px 1px 2px rgba(0,0,0,0.7) inset;
+	transform: scale(0.99);
+}
+
+.buttonViewGallery {
+	width: 40%;
+	height: 50%;
+	grid-area: B;
+	justify-self: flex-end;
+	border: none;
+	font-weight: 400;
+	font-size: 15px;
+    line-height:22px;
+    line-height:110%;
+	color:#FFFFFF;
+	background-color: #F85A47;
+	border-radius: 5px;
+}
+
+
 .fourthContainer {
 
 }
