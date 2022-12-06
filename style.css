@@ -294,19 +294,19 @@ input::-webkit-inner-spin-button {
 }
 .aboutWorksContainer {
 	grid-template-areas: 
-            "a b c d e"
-            "a b c d e"
-            "a b c d e" ;
-  height: 100%;
-  position: relative;
+            "a b c d e";
+	height: 50%;
+	max-height: 700px;
+   position: relative;
 	display: grid;
 	justify-items: center;
 	justify-content: space-evenly;
 }
 .cardAbout {
+	
 	justify-items: center;
 	display: grid;
-	grid-template-rows: 15% 15% 1fr;
+	grid-template-rows: auto auto;
 	width: 387px;
 
 }
@@ -351,7 +351,7 @@ input::-webkit-inner-spin-button {
 }
 .hrCircleFirst{
 	position: relative;
-	align-self: center;
+	align-self: flex-end;
 	width: 80%;
 	margin: 0 10%;
 }
@@ -369,7 +369,7 @@ input::-webkit-inner-spin-button {
 }
 .hrCircleSecond{
 	position: relative;
-	align-self: center;
+	align-self: flex-end;
 	width: 80%;
 	margin: 0 10%;
 }
@@ -431,9 +431,21 @@ input::-webkit-inner-spin-button {
 	line-height: 26px;
 }
 .thirdContainer {
+	margin: 0 auto;
+	width: 85%;
+	height: calc(var(--vh, 1vh) * 100 - 172px);
+}
+.galleryConatiner {
+	display: grid;
+	grid-template-rows: 25% 75%;
+}
+.headerTxtInContainer {
 
 }
-
+.galleryPhoto {
+	display: flex;
+	flex-wrap: nowrap;
+}
 .fourthContainer {
 
 }
