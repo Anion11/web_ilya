@@ -280,12 +280,20 @@ input::-webkit-inner-spin-button {
 }
 .secondContainer {
 	margin: 0 auto;
+	display: flex;
+	justify-content: center;
 	width: 85%;
-	height: calc(var(--vh, 1vh) * 100 - 172px);
+	height: calc(var(--vh, 1vh) * 100);
+}
+.secondContainerWrapper{
+	align-self: center;
+	display: flex;
+	flex-wrap: wrap; 
+	justify-content: center;
 }
 .headingText {
-	margin-top: 20%;
 	margin-bottom: 70px;
+	width: 100%;
 	font-family: 'Manrope', sans-serif;
 	text-align: center;
 	font-weight: 600;
@@ -295,20 +303,17 @@ input::-webkit-inner-spin-button {
 .aboutWorksContainer {
 	grid-template-areas: 
             "a b c d e";
-	height: 50%;
 	max-height: 700px;
-   position: relative;
+  position: relative;
 	display: grid;
 	justify-items: center;
-	justify-content: space-evenly;
+	width: 100%;
 }
 .cardAbout {
-	
 	justify-items: center;
 	display: grid;
-	grid-template-rows: auto auto;
+	grid-template-rows: 70% 30%;
 	width: 387px;
-
 }
 #cardAboutAreaFirst{
 	grid-area: a;
@@ -326,7 +331,7 @@ input::-webkit-inner-spin-button {
 	max-height: 120px;
 	display: flex;
 	border-radius: 20px;
-
+	align-self: center;
 }
 .cardAboutImg img,.cardAboutImg1 img, .cardAboutImg2 img{
   margin: auto;
@@ -351,25 +356,25 @@ input::-webkit-inner-spin-button {
 }
 .hrCircleFirst{
 	position: relative;
-	align-self: flex-end;
+	align-self: center;
 	width: 80%;
 	margin: 0 10%;
 }
 .parentForHrFirst {
 	width: 33%;
 	display: flex; 
-	height: 15%; 
+	height: 70%; 
 	grid-area: b/a/b/c;
 }
 .parentForHrSecond {
 	display: flex; 
 	width: 33%;
-	height: 15%; 
+	height: 70%; 
 	grid-area: d/c/d/e;
 }
 .hrCircleSecond{
 	position: relative;
-	align-self: flex-end;
+	align-self: center;
 	width: 80%;
 	margin: 0 10%;
 }
@@ -396,7 +401,6 @@ input::-webkit-inner-spin-button {
 	right: 0;
 	background: #9672FF;
 }
-
 .gradientHrFirst  {
 	opacity: 0.5;
 	height: 2px;
@@ -433,18 +437,16 @@ input::-webkit-inner-spin-button {
 .thirdContainer {
 	margin: 0 auto;
 	width: 85%;
-	height: calc(var(--vh, 1vh) * 100 - 172px);
+	height: calc(var(--vh, 1vh) * 100);
 }
 .galleryConatiner {
-	display: grid;
-	grid-template-rows: 25% 75%;
-	row-gap: 50px;
 	width: 100%;
+	height: 100%;
 }
 .buttonInText {
 	display: grid;
 	grid-template-areas: 'A B'
-						 'C B'	;
+						 					 'C B';
 }
 .headerTxtInContainer {
 	grid-area: A;
@@ -453,49 +455,46 @@ input::-webkit-inner-spin-button {
 	font-weight: 600;
 	font-size: 40px;
 	line-height: 55px;
-	margin-left: 30px;
 	Line-height: 100%;
+	margin-bottom: 15px;
 }
-
 .textInGaleery {
-
 	grid-area: C;
-	margin-left: 30px;
 	margin-top: 10px;
 	font-family: 'Manrope',sans-serif;
 	font: normal;
 	font-weight: 400;
-    font-size: 16px;
-    line-height:24px;
-    line-height:110%;
+  font-size: 16px;
+  line-height:24px;
 	width: 476px;
-
 }
 .galleryPhoto {
-	display: grid;
-	grid-template-rows: 15% 85%;
+	height: 100%;
 }
 .namesHouse a {
-	margin-left: 2.6%;
+	margin-right: 2.6%;
 }
 .namesHouse {
-	width: 75%;
+	width: 100%;
 	display: flex;
 	flex-wrap: nowrap;
 	font-family: 'Manrope',sans-serif;
 	font-size: 19px;
 	line-height: 26px;
 	line-height: 100%;
+	margin-bottom: 57px;
+	margin-top: 50px;
 }
 .imgHouse {
 	display: flex;
 	flex-wrap: nowrap;
+	justify-content: space-between;
+	column-gap: 1%;
 }
 .galleryPhoto img {
-	margin-left: 30px;
-	width: 35%;
+	width: 100%;
+	min-width: 50px;
 }
-
 .buttonViewGallery:hover{
 	opacity: 0.9;
 	cursor: pointer;
@@ -504,42 +503,39 @@ input::-webkit-inner-spin-button {
 	box-shadow:1px 1px 2px rgba(0,0,0,0.7) inset;
 	transform: scale(0.99);
 }
-
 .buttonViewGallery {
-	width: 40%;
-	height: 50%;
+	width: 35%;
+	min-width: 150px;
+	height: 75%;
 	grid-area: B;
 	justify-self: flex-end;
 	border: none;
 	font-weight: 400;
 	font-size: 15px;
-    line-height:22px;
-    line-height:110%;
+  line-height:22px;
+  line-height:110%;
 	color:#FFFFFF;
 	background-color: #F85A47;
 	border-radius: 5px;
 }
-
-
 .fourthContainer {
 	width: 85%;
-	height: calc(var(--vh, 1vh) * 100 - 172px);
+	height: calc(var(--vh, 1vh) * 100);
 	margin: 0 auto;
 }
 .fourthContainerHead{
-	height: 5%;
+	padding-top: 2%;
 	text-align: center;
 	font-family: 'Manrope';
 	font-style: normal;
 	font-weight: 600;
 	font-size: 40px;
 	line-height: 55px;
-	margin: 5% 0;
+	margin-bottom: 5%;
 }
 .fourthContainerMain{
 	background: #F1FFFF;
 	width: 100%;
-	height: 90%;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
@@ -548,7 +544,7 @@ input::-webkit-inner-spin-button {
 	margin-top: 23px;
 }
 .fourthContainerMainRightINFO{
-	margin-right: 50%;
+	min-width: 377px;
 }
 .fourthContainerMainRight span{
 	display: block;
@@ -615,12 +611,14 @@ input::-webkit-inner-spin-button {
 }
 .fivesContainer {
 	width: 85%;
-	height: calc(var(--vh, 1vh) * 100 - 172px);
+	height: calc(var(--vh, 1vh) * 100);
 	margin: 0 auto;
 }
 
 .sixthContainer {
-
+	width: 85%;
+	height: calc(var(--vh, 1vh) * 100);
+	margin: 0 auto;
 }
 .footer{
 	display: grid;
