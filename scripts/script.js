@@ -88,7 +88,18 @@ function checkInputBlur(value){
         document.getElementById('imgZipCode').style.opacity = 0.4;
     }
 }
-
+function checkInputFocusEmail()
+{
+    document.getElementById('email').style.borderBottom = "1px solid black";
+}
+function checkInputBlurEmail(value){
+    if (value == ''){
+        document.getElementById('email').style.borderBottom = "none";
+    }
+    else{
+        document.getElementById('email').style.borderBottom = "1px solid black";
+    }
+}
 function activeLink(index1,index2,index3){
     for (let i = 0; i < links.length; i++){
         links[i].classList.remove("activeLink");

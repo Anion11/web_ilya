@@ -8,9 +8,7 @@
     </head>
     <body>
        <header>
-        
         <div class="headerCl">
-            
             <div class = "compName">SmartSpace</div> 
             <div class = "menu">
                 <span><a href="#" class="disActiveLink" class="activeLink" onclick="activeLink(0,6,12)">Home</a></span>
@@ -192,7 +190,19 @@
                
            </div>
            <div class="sixthContainer">
-               
+               <div class="sixthContainerWrapper">
+                    <div class="headingText">Get Our Newsletter</div>  
+                    <div class="headingTextBottom">To join the worldwide community</div>  
+                    <div class="inputEmailAdress">
+                        <div>
+                            <label for="email">Type your Email Address</label>
+                            <input type="email" name="email" id="email" pattern=".+@globex\.com" required onblur="checkInputBlurEmail(this.value)" onfocus="checkInputFocusEmail()">
+                        </div>
+                        <div style="position: relative;">
+                            <button>Send Now</button>
+                        </div>
+                    </div>
+                </div>
            </div>
        </main>
        <footer>

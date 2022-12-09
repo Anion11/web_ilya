@@ -8,6 +8,7 @@
 :root {/*Переменные*/
   --font: calc(1vw + 1vh);
 }
+
 *{
 	margin: 0;
 	box-sizing:border-box; 
@@ -291,7 +292,7 @@ input::-webkit-inner-spin-button {
 	flex-wrap: wrap; 
 	justify-content: center;
 }
-.headingText {
+.secondContainer .headingText {
 	margin-bottom: 70px;
 	width: 100%;
 	font-family: 'Manrope', sans-serif;
@@ -648,9 +649,125 @@ table tr:nth-child(4) {
 }
 
 .sixthContainer {  																													/*Шестой контейнер*/
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
 	width: 85%;
 	height: calc(var(--vh, 1vh) * 100);
-	margin: 0 auto;
+	background-color: #FBFCFC;
+}
+.sixthContainerWrapper{
+	align-self: center;
+	display: flex;
+	flex-wrap: wrap; 
+	justify-content: center;
+}
+.sixthContainerWrapper .headingText {
+	margin-bottom: 11px;
+	width: 100%;
+	text-align: center;
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 45px;
+	letter-spacing: 0.02em;
+	color: #31353B;
+}
+.sixthContainerWrapper .headingTextBottom {
+	margin-bottom: 34px;
+	width: 100%;
+	text-align: center;
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 23px;
+	letter-spacing: 0.02em;
+	color: #31353B;
+}
+.inputEmailAdress{
+	display: grid;
+	grid-template-columns: 65% 35%;
+	width: 60%;
+	background: #FFFFFF;
+	box-shadow: 0px 163px 80px rgba(0, 0, 0, 0.04),
+	 						0px 105.648px 46.8519px rgba(0, 0, 0, 0.0303704),
+	  					0px 62.7852px 25.4815px rgba(0, 0, 0, 0.0242963),
+	   					0px 32.6px 13px rgba(0, 0, 0, 0.02),
+	    				0px 13.2815px 6.51852px rgba(0, 0, 0, 0.0157037),
+	     				0px 3.01852px 3.14815px rgba(0, 0, 0, 0.00962963);
+}
+.inputEmailAdress label{
+	margin-left: 45px;
+  display: block;
+  font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 17px;
+	letter-spacing: 0.02em;
+	color: #31353B;
+	opacity: 0.3;
+  margin-bottom:11px;
+  margin-top: 27px;
+}
+.inputEmailAdress input{
+	width: calc(100% - 45px);
+	height: 29px;
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 144.2%;
+	letter-spacing: 0.02em;
+	color: #31353B;
+	margin-left: 45px;
+	margin-bottom: 32px;
+ 	border:none;
+  outline: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-bottom: 1px solid black;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.inputEmailAdress button{
+	position: absolute;
+	height: 72px;
+	width: 167px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+	border: none;
+	font-family: 'DM Sans';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	letter-spacing: 0.02em;
+	background-color: #F85A47;
+	text-align: center;
+	color: #FFFFFF;
+	box-shadow: 0px 100px 80px rgba(248, 90, 71, 0.07),
+	 						0px 64.8148px 46.8519px rgba(248, 90, 71, 0.0531481),
+	  					0px 38.5185px 25.4815px rgba(248, 90, 71, 0.0425185),
+	  				 	0px 20px 13px rgba(248, 90, 71, 0.035),
+	    				0px 8.14815px 6.51852px rgba(248, 90, 71, 0.0274815),
+	     				0px 1.85185px 3.14815px rgba(248, 90, 71, 0.0168519);
+}
+.inputEmailAdress button:hover{
+	opacity: 0.9;
+	cursor: pointer;
+}
+.inputEmailAdress button:active{
+	box-shadow:1px 1px 2px rgba(0,0,0,0.7) inset;
+	transform: scale(0.99);
 }
 .footer{  																													        /*Футер сайта*/
 	display: grid;
