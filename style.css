@@ -773,6 +773,9 @@ select:-webkit-autofill:focus {
 	box-shadow:1px 1px 2px rgba(0,0,0,0.7) inset;
 	transform: scale(0.99);
 }
+footer{
+	background-color: #FBFCFC;
+}
 .footer{  																													        /*Футер сайта*/
 	display: grid;
 	width: 65%;
