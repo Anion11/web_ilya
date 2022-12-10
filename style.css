@@ -647,7 +647,92 @@ table tr:nth-child(4) {
 	height: calc(var(--vh, 1vh) * 100);
 	margin: 0 auto;
 }
-
+.fivesContainerHeader{
+	max-width: 570px;
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 55px;
+	color: #000000;
+	margin-bottom: 51px;
+}
+.fivesContainerMain{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 50px;
+}
+.fivesContainerFeedback{
+	background: #FFFFFF;
+	border: 1px solid #EBEBEB;
+	border-radius: 10px;
+}
+.fivesContainerFeedbackInfo{
+	display: grid;
+	grid-template-rows: repeat(3, auto);
+	margin: 52px 0;
+	margin-left: 38px;
+	margin-right: 72px;
+}
+.fivesContainerFeedbackText{
+	margin-top: 34px;
+	margin-bottom: 53px;
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	color: #333333;
+}
+#userPhoto{
+	display: inline-block;
+}
+.userInfo{
+	display: inline-block;
+	margin-left: 20px;
+}
+#userName{
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 22px;
+	color: #333333;
+}
+#userResidency{
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	color: #666666;
+}
+.fivesContainerFooter{
+	display: grid;
+	margin-top: 85px;
+	grid-template-columns: auto auto;
+	grid-gap: 50px;
+}
+.fivesContainerPartnersImg{
+	display: grid;
+	grid-auto-columns: min-content;
+	grid-auto-flow: column;
+	align-items: center;
+	gap: 80px;
+}
+.fivesContainerFooterText{
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #333333;
+	max-width: 311px;
+}
+.pricingPlans{
+	color: #2CBDE7;
+	border-bottom: 1px solid #2CBDE7;
+}
 .sixthContainer {  																													/*Шестой контейнер*/
 	width: 100%;
 	height: calc(var(--vh, 1vh) * 100);

@@ -38,7 +38,10 @@
                     <span style="display: block;padding-right: 20px; font-family: 'DM Sans';font-style: normal;font-weight: 700;font-size: 22px;line-height: 29px;color: #FF9900;">RESIDENTIAL & OFFICE SPACES</span><br>
                     <span style="display: block;padding-right: 20px; font-family: 'Manrope';font-style: normal;font-weight: 800;font-size: 54px;line-height: 74px;color: #000000;">Smart Living Style<br> for Smart People</span><br>
                     <span style="display: block; padding-right: 20px;font-family: 'Manrope';font-style: normal;font-weight: 400;font-size: 17px;line-height: 23px;letter-spacing: 0.01em;color: #31353B;">Much did had call new drew that kept. Limits expect wonder<br> law she. Now has you views woman noisy match money rooms.</span>
-                    <form class="imgZipCode"><input id="imgZipCode" type="number" placeholder="Enter Zipcode to search properties" pattern="" title="" onblur="checkInputBlur(this.value)" onfocus="checkInputFocus(this.value)"/><button id="btnZipCode">Search Now!</button></form>
+                    <form class="imgZipCode">
+                        <input id="imgZipCode" type="text" required placeholder="Enter Zipcode to search properties" pattern="(^[0-9]{5}[-]{1}[0-9]{4}$|^[0-9]{5}$)" title="XXXXX-YYYY" onblur="checkInputBlur(this.value)" onfocus="checkInputFocus(this.value)"/>
+                        <button id="btnZipCode">Search Now!</button>
+                    </form>
                 </div>
                 <div class="containerImage">
                     <div class="imgs">
@@ -187,7 +190,52 @@
                </div>
            </div>
            <div class="fivesContainer">
-                
+                <div class="fivesContainerHeader"><span>Loved by businesses, and individuals across the globe.</span></div>
+                <div class="fivesContainerMain">
+                    <div class="fivesContainerFeedback">
+                        <div class="fivesContainerFeedbackInfo">
+                            <div class="fivesContainerFeedbackRate">
+                                <img src="Img/Star.png">
+                                <img src="Img/Star.png">
+                                <img src="Img/Star.png">
+                                <img src="Img/Star.png">
+                                <img src="Img/Star.png">
+                            </div>
+                            <div class="fivesContainerFeedbackText">
+                                <span>
+                                    Moderate children at of outweigh it. Unsatiable it considered invitation he travelling insensible. Consulted admitting oh mr up as described.
+                                </span>
+                            </div>
+                            <div class="fivesContainerFeedbackProfile">
+                                <a href="#">
+                                    <img id="userPhoto" src="Img/User.png">
+                                    <div class="userInfo">
+                                        <spam id="userName">Jane Cooper</span><br>
+                                        <span id="userResidency">Los Angeles, CA</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fivesContainerFeedback">
+                        
+                    </div>
+                    <div class="fivesContainerFeedback">
+                        
+                    </div>
+                </div>
+                <div class="fivesContainerFooter">
+                    <div class="fivesContainerPartnersImg">      
+                            <img src="Img/airbnb.png">            
+                            <img src="Img/CISCO.png">
+                            <img src="Img/Ebay.png">
+                            <img src="Img/Uber.png">
+                            <img src="Img/Microsoft.png">
+                        </div>
+                    <div class="fivesContainerFooterText">
+                        <span>Give us a Call 1-888-111-2222 and we can set you up, or <a href="#" class="pricingPlans">check our pricing plans</a></span>
+                    </div>
+                </div>
            </div>
            <div class="sixthContainer">
                <div class="sixthContainers">
@@ -197,7 +245,7 @@
                         <form class="inputEmailAdress">
                             <div>
                                 <label for="email">Type your Email Address</label>
-                                <input type="email" name="email" id="email" pattern="" title="" required onblur="checkInputBlurEmail(this.value)" onfocus="checkInputFocusEmail()">
+                                <input type="email" name="email" id="email" required onblur="checkInputBlurEmail(this.value)" onfocus="checkInputFocusEmail()">
                             </div>
                             <div style="position:relative;">
                                 <button>Send Now</button>
