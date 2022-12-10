@@ -25,7 +25,6 @@ window.onload = function(){
    links = document.getElementsByClassName("disActiveLink");
    activeLink(0,6,12);
 }
-
 function fade_to_next() {
   opacity--;
   var k = i + 1;
